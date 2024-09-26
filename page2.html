@@ -3,11 +3,19 @@
 <head>
                         <meta charset="UTF-8">
                         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                        <title>Document</title>
+                        <title>Home</title>
+
+                        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+                        <script src="https://cdn.tailwindcss.com"></script>
+
+                        <script src="https://kit.fontawesome.com/f293a6a5ec.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <main>
-  <div class="navbar bg-orange-100 justify-around ">
+
+ <header>
+  <div class="navbar bg-orange-100 justify-around">
 
   <div>
                         
@@ -27,6 +35,54 @@
 
 </div>
 
- </main>   
+
+</header> 
+<main>
+  <div class="">
+    <h1 class="pl-20 mt-10 mb-10 ml-24 text-4xl font-bold">Important FAQ <i class="fa-regular fa-circle-question"></i></h1>
+    
+  </div>
+
+
+
+  <div class="w-auto h-full mx-20 pl-20">
+    <div class="join join-vertical w-full">
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" checked="checked" />
+        <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
+        <div class="collapse-content">
+          <p>What is the DOM? The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+        <div class="collapse-content">
+          <p>The DOM Input select() method selects all the text content of a textarea or an input element that contains the text field.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title text-xl font-medium">What is event Delegation in the context of the DOM,and why is it useful?</div>
+        <div class="collapse-content">
+          <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.</p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+        <div class="collapse-content">
+          <p>Manipulating Element Attributes
+            The classList object only provide methods to change the class of an element. If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set.</p>
+        </div>
+      </div>
+    </div>
+    
+    
+ 
+  </div>
+</main>  
+                       
 </body>
 </html>
