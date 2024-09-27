@@ -11,7 +11,7 @@
 </head>
 <body>
  <header>
-  <div class="navbar bg-orange-50 justify-around ">
+  <div id="navbar" class="navbar sticky-navbar fixed top-0 w-screen z-20 bg-opacity-95  bg-amber-100 justify-around ">
 
   <div>
                         
@@ -20,13 +20,13 @@
 
   <div class="">
      <img src="images/logo.png" class="w-9">
-    <button class=" ml-4 font-bold bg-orange-50"> Donate Bangladesh</button> 
+    <button class=" ml-4 font-bold bg-amber-100"> Donate Bangladesh</button> 
   </div>
 
 
   <div class="">
     <img src="images/coin.png" class="w-4">
-    <button class="bg-orange-50"> 5500 BDT</button>
+    <button class="bg-amber-100"> 5500 BDT</button>
   </div>
 
 </div>
@@ -34,13 +34,13 @@
 </header> 
 
 <main>
-  <div class=" flex justify-center align-middle mt-10  mb-6">
-    <button class="btn btn-md mr-2 bg-white border border-gray-300">Donation</button>
+  <div id="heading"   class=" sticky-heading fixed  z-10 bg-opacity-95 bg-zinc-100  py-16    w-screen flex justify-center align-middle mt-10  mb-28">
+    <button class="btn btn-md mr-2 border border-gray-300 bg-lime-300">Donation</button>
     <button class="btn btn-md bg-white border border-gray-300">History</button>
   </div>
 
-  <div class="mb-5">
-    <div class="hero border border-gray-300 rounded-xl h-auto w-auto mx-52 mb-2">
+  <div class="mb-5 pt-56 bg-zinc-100 ">
+    <div class="hero border border-gray-300  rounded-xl h-auto w-auto mx-52 mb-2">
       <div class="hero-content flex-col lg:flex-row">
         <img
           src="images/noakhali.png"
@@ -107,10 +107,11 @@
     
   </div>
 </main>
-<footer class="bg-orange-50 w-full h-24">
+<footer class="bg-amber-100  w-full h-24">
 
 </footer>
 
     <script src="js/home.js"></script>
+    <script src="/js/sticky.js"></script>
 </body>
 </html>
