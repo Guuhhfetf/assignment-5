@@ -12,3 +12,4 @@ document.getElementById('btn-add-money')
    alert('Failed to remove the money.');                     
   }
 })
+

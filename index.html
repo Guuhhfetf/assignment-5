@@ -8,6 +8,20 @@
                         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 
                         <script src="https://cdn.tailwindcss.com"></script>
+
+                        <style>
+                         .hidden {
+                         display: none;
+                        }
+
+                      .popup.open-popup {
+                       display: block; /* Ensure it shows up */
+                       top: 50%; /* Position correctly */
+                       transform: translate(-50%, -50%) scale(1);
+                       transition: transform 0.4s ease, top 0.4s ease;
+                       
+                      }
+                       </style>
 </head>
 <body>
  <header>
@@ -57,7 +71,18 @@
           type="text" autocomplete="off"
           placeholder="Write Donation Amount"
          id="input-add-money"  class="input input-bordered input-md w-full " />
-          <button id="btn-add-money" class="btn btn-md w-full mt-2 bg-lime-300 font-bold">Donate Now</button>
+         <div class="container">
+          <button id="btn-add-money" onclick="openPopup()" class="btn btn-md w-full mt-2 bg-lime-300 font-bold">Donate Now</button>
+      
+          <div id="popup" class="popup w-96 h-52  text-center bg-white absolute top-0 left-50% -translate-x-1/2 -translate-y-1/2 hidden" >
+              <h1 class="text-2xl font-bold mb-2">Congrats!</h1>
+              <img class="ml-44 w-6 mb-6" src="images/coin.png" alt="">
+              <h4 class="text-sm">You Have Donated for Humankind</h4>
+              <h3 class="text-base font-bold mb-4">Successfully</h3>
+              <button onclick="closePopup()" class="btn text-xs outline-none bg-slate-200 cursor-pointer">Close Confirmation</button>
+          </div>
+      </div>
+      
         </div>
       </div>
     </div>
@@ -121,5 +146,19 @@
     <script src="/main.js/utilities.js"></script>
     <script src="/main.js/donation.js"></script>
     <script src="/main.js/cashout.js"></script>
+    <script>
+      let popup = document.getElementById("popup");
+
+   function openPopup() {
+    popup.classList.add("open-popup");
+    popup.classList.remove("hidden");
+}
+
+   function closePopup() {
+    popup.classList.remove("open-popup");
+    popup.classList.add("hidden");
+}
+
+      </script>
 </body>
 </html>
