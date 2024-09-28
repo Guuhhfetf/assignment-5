@@ -1,5 +1,5 @@
 
-/*donation step-1*/
+//donation step-1
 document.getElementById('btn-add-money')
 .addEventListener('click',function(event){
        event.preventDefault();                 
@@ -17,7 +17,7 @@ else{
 
 })
 
-/*donation step-2*/
+//donation step-2
 document.getElementById('donation2')
 .addEventListener('click',function(event){
        event.preventDefault();                 
@@ -35,7 +35,7 @@ else{
 
 })
 
-/*donation step-3*/
+//donation step-3
 document.getElementById('btn3')
 .addEventListener('click',function(event){
        event.preventDefault();                 

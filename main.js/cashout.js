@@ -4,11 +4,11 @@ document.getElementById('btn-add-money')
     
   const addMoney=  getInputFieldValueById('input-add-money');
   if(!isNaN(addMoney)){
-      const balance0= getTextFieldValueById('account-balance-cashout');
+      const balance0= getTextFieldValueById('account-balance-remove');
        const newBalance0=balance0-addMoney;
-       document.getElementById('account-balance-cashout').innerText=newBalance0;                
+       document.getElementById('account-balance-remove').innerText=newBalance0;                
   }
   else{
-   alert('Failed to cashout the money.');                     
+   alert('Failed to remove the money.');                     
   }
 })

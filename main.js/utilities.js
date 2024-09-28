@@ -1,5 +1,5 @@
 
-/*donation step-1,2 and 3 togethers function*/
+//donation step-1,2 and 3 togethers function
 function getInputFieldValueById(id){
     const inputValue=document.getElementById(id).value;
     const inputNumber=parseFloat(inputValue);
